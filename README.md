@@ -32,10 +32,10 @@
 <p align="center">  
 <img title="Allure Overview Dashboard" src="images/jenkinsdesctop.png" width="850">  
 </p>  
-## :ballot_box_with_check: Параметры сборки в Jenkins:
+:ballot_box_with_check: Параметры сборки в Jenkins:
 
 - данные авторизации в wb selenoid.autotests.cloud
-- тип запуска тестов 
+- тип запуска тестов  
 
 ## Команда для запуска из терминала
 
