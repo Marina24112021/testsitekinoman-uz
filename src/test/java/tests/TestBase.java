@@ -19,16 +19,15 @@ public class TestBase {
     static void beforeAll() {
         Configuration.baseUrl = "https://kinoman.uz";
         Configuration.pageLoadStrategy = "eager";
-        //Configuration.remote = "https://" + System.getProperty("credential") + "@" + WebDriverUtils.REMOTEWD.getDef() + "/wd/hub";
+        Configuration.remote = "https://" + System.getProperty("credential") + "@" + WebDriverUtils.REMOTEWD.getDef() + "/wd/hub";
+        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.reopenBrowserOnFail = false;
-        /*DesiredCapabilities capabilities = new DesiredCapabilities();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-
-         */
     }
 
     @BeforeEach
@@ -36,12 +35,12 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
     }
 
-    /*@AfterEach
+    @AfterEach
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
         Attach.browserConsoleLogs();
         Attach.addVideo();
         closeWebDriver();
-    }*/
+    }
 }
