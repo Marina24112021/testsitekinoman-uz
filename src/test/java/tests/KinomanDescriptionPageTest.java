@@ -12,10 +12,10 @@ import static com.codeborne.selenide.logevents.SelenideLogger.step;
 public class KinomanDescriptionPageTest extends TestBase {
     PageObject pageObject = new PageObject();
     ResultList resultList = new ResultList();
-    String searchValueTitle = "Головоломка 2",
-            searchValueYear = "2024",
-            searchCountry = "США",
-            searchAuthor = "Келси Манн",
+    String searchValueTitle = "Приключения Али-Бабы и сорока разбойников",
+            searchValueYear = "1980",
+            searchCountry = "СССР",
+            searchAuthor = "Латиф Файзиев",
             moviePath = "/movie/26197";
     @DisplayName("Test check the names of attributes on detail page ")
     @Test
