@@ -20,7 +20,6 @@ public class TestBase {
         Configuration.baseUrl = "https://kinoman.uz";
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://" + System.getProperty("credential") + "@" + WebDriverUtils.REMOTEWD.getDef() + "/wd/hub";
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         Configuration.reopenBrowserOnFail = false;
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(

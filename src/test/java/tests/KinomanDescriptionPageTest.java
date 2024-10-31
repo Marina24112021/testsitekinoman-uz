@@ -16,7 +16,7 @@ public class KinomanDescriptionPageTest extends TestBase {
             searchValueYear = "1980",
             searchCountry = "СССР",
             searchAuthor = "Латиф Файзиев",
-            moviePath = "/movie/26197";
+            moviePath = "/movie/6232";
     @DisplayName("Test check the names of attributes on detail page ")
     @Test
     void checkCountOfContentAttributesOnDetailPageTest() {
@@ -67,6 +67,7 @@ public class KinomanDescriptionPageTest extends TestBase {
             resultList.ShouldHaveAuthorInContentAttributes(searchAuthor);
         });
     }
+    @Tag("smoke")
     @DisplayName("Test check the description in content attributes on detail page from .csv local file")
     @Test
     void checkDescriptionOfSearchingValueTest() {

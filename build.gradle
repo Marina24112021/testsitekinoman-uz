@@ -52,3 +52,8 @@ task demoqa_test(type: Test) {
         includeTags("positive-simple")
     }
 }
+task demoqa_test_smoke(type: Test) {
+    useJUnitPlatform {
+        includeTags("smoke")
+    }
+}
