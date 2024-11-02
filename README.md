@@ -57,7 +57,7 @@ gradle clean demoqa_test -Dcredential=user1:1234
 <img title="Allure Overview Dashboard" src="images/al2.png" width="850">  
 </p>  
 
-## Тест-кейсы
+## Test cases
 
 <p align="center">  
 <img title="Allure Tests" src="images/al1.png" width="850">
